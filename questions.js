@@ -19,10 +19,25 @@ text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
 document.getElementById("demo").innerHTML = obj.name;
 
+//
 function questions (){
-for (var i = 0; i < obj.javascripts.length; i++) {
-  var quests = obj.javascripts[i].questions;
-  }
-  return document.getElementById("question").innerHTML = quests
+  for (var i = 0; i < obj.javascripts.length; i++) {
+    var quests = obj.javascripts[i].questions;
+    var answers = obj.javascripts[i].answers;
+    document.createElement('p')
+    document.getElementById("question").innerHTML = quests
+    }
+  return
 }
 questions();
+
+//variety of colors for notecard
+// var colors = ['#ff0000', '#00ff00', '#0000ff'];
+function changeColors(){
+  var colors = ['red', 'lightyellow', 'blue'];
+  var random_color = colors[Math.floor(Math.random() * colors.length)];
+  console.log(random_color);
+  document.getElementsByClassName('notecard').style.backgroundColor = random_color;
+  return;
+}
+changeColors();

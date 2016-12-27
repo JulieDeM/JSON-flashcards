@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+.notecard{
+  background-color: lightyellow;
+  width: 50%;
+  height: 60%;
+  margin-left: 20%;
+  margin-top: 12%;
+  padding: 5%;
+}
